@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000031 /* EchoPetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000030 /* EchoPetApp.swift */; };
+		000000000000000000000033 /* EchoModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000032 /* EchoModels.swift */; };
+		000000000000000000000035 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000034 /* Theme.swift */; };
+		000000000000000000000037 /* DemoDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000036 /* DemoDataService.swift */; };
+		000000000000000000000039 /* CompanionReplyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000038 /* CompanionReplyService.swift */; };
+		000000000000000000000041 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000040 /* HomeViewModel.swift */; };
+		000000000000000000000043 /* PetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000042 /* PetCard.swift */; };
+		000000000000000000000045 /* LifePrintCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000044 /* LifePrintCard.swift */; };
+		000000000000000000000047 /* TimelineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000046 /* TimelineCard.swift */; };
+		000000000000000000000049 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000048 /* ChatBubble.swift */; };
+		000000000000000000000051 /* MemoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000050 /* MemoryCard.swift */; };
+		000000000000000000000053 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000052 /* HomeView.swift */; };
+		000000000000000000000055 /* LifeTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000054 /* LifeTimelineView.swift */; };
+		000000000000000000000057 /* LifePrintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000056 /* LifePrintView.swift */; };
+		000000000000000000000059 /* EchoCompanionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000058 /* EchoCompanionView.swift */; };
+		000000000000000000000061 /* MemoryCapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000060 /* MemoryCapsuleView.swift */; };
+		000000000000000000000065 /* EchoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000064 /* EchoPage.swift */; };
+		000000000000000000000067 /* LocalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000066 /* LocalDataStore.swift */; };
+		000000000000000000000069 /* EmptyStateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000068 /* EmptyStateCard.swift */; };
+		000000000000000000000071 /* PetProfileFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000070 /* PetProfileFormView.swift */; };
+		000000000000000000000073 /* TimelineMemoryFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000072 /* TimelineMemoryFormView.swift */; };
+		000000000000000000000075 /* TimelineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000074 /* TimelineDetailView.swift */; };
+		000000000000000000000077 /* MemoryCapsuleFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000076 /* MemoryCapsuleFormView.swift */; };
+		000000000000000000000079 /* MemoryCapsuleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000078 /* MemoryCapsuleDetailView.swift */; };
+		000000000000000000000081 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000080 /* SettingsView.swift */; };
+		000000000000000000000083 /* EchoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000082 /* EchoRepository.swift */; };
+		000000000000000000000086 /* EchoAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000085 /* EchoAPIClient.swift */; };
+		000000000000000000000088 /* MediaPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000087 /* MediaPermissionService.swift */; };
+		00000000000000000000008A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000089 /* ProfileView.swift */; };
+		00000000000000000000008D /* EchoModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000008C /* EchoModelTests.swift */; };
+		00000000000000000000008F /* LocalDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000008E /* LocalDataStoreTests.swift */; };
+		000000000000000000000091 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000090 /* HomeViewModelTests.swift */; };
+		000000000000000000000093 /* EchoAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000092 /* EchoAPIClientTests.swift */; };
+		0000000000000000000000A1 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000000A0 /* Localization.swift */; };
+		0000000000000000000000A3 /* EchoSupabaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000000A2 /* EchoSupabaseClient.swift */; };
+		0000000000000000000000A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000062 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00000000000000000000009E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000004;
+			remoteInfo = EchoPet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000005 /* EchoPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EchoPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000030 /* EchoPetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoPetApp.swift; sourceTree = "<group>"; };
+		000000000000000000000032 /* EchoModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoModels.swift; sourceTree = "<group>"; };
+		000000000000000000000034 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		000000000000000000000036 /* DemoDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDataService.swift; sourceTree = "<group>"; };
+		000000000000000000000038 /* CompanionReplyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionReplyService.swift; sourceTree = "<group>"; };
+		000000000000000000000040 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000042 /* PetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCard.swift; sourceTree = "<group>"; };
+		000000000000000000000044 /* LifePrintCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifePrintCard.swift; sourceTree = "<group>"; };
+		000000000000000000000046 /* TimelineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCard.swift; sourceTree = "<group>"; };
+		000000000000000000000048 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		000000000000000000000050 /* MemoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCard.swift; sourceTree = "<group>"; };
+		000000000000000000000052 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		000000000000000000000054 /* LifeTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeTimelineView.swift; sourceTree = "<group>"; };
+		000000000000000000000056 /* LifePrintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifePrintView.swift; sourceTree = "<group>"; };
+		000000000000000000000058 /* EchoCompanionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoCompanionView.swift; sourceTree = "<group>"; };
+		000000000000000000000060 /* MemoryCapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCapsuleView.swift; sourceTree = "<group>"; };
+		000000000000000000000062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000000000000000000000064 /* EchoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoPage.swift; sourceTree = "<group>"; };
+		000000000000000000000066 /* LocalDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataStore.swift; sourceTree = "<group>"; };
+		000000000000000000000068 /* EmptyStateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateCard.swift; sourceTree = "<group>"; };
+		000000000000000000000070 /* PetProfileFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetProfileFormView.swift; sourceTree = "<group>"; };
+		000000000000000000000072 /* TimelineMemoryFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineMemoryFormView.swift; sourceTree = "<group>"; };
+		000000000000000000000074 /* TimelineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineDetailView.swift; sourceTree = "<group>"; };
+		000000000000000000000076 /* MemoryCapsuleFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCapsuleFormView.swift; sourceTree = "<group>"; };
+		000000000000000000000078 /* MemoryCapsuleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCapsuleDetailView.swift; sourceTree = "<group>"; };
+		000000000000000000000080 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		000000000000000000000082 /* EchoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoRepository.swift; sourceTree = "<group>"; };
+		000000000000000000000085 /* EchoAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoAPIClient.swift; sourceTree = "<group>"; };
+		000000000000000000000087 /* MediaPermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPermissionService.swift; sourceTree = "<group>"; };
+		000000000000000000000089 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		00000000000000000000008B /* EchoPetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EchoPetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00000000000000000000008C /* EchoModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoModelTests.swift; sourceTree = "<group>"; };
+		00000000000000000000008E /* LocalDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataStoreTests.swift; sourceTree = "<group>"; };
+		000000000000000000000090 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		000000000000000000000092 /* EchoAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoAPIClientTests.swift; sourceTree = "<group>"; };
+		0000000000000000000000A0 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		0000000000000000000000A2 /* EchoSupabaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoSupabaseClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000020 /* EchoPet */,
+				000000000000000000000094 /* Tests */,
+				000000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000005 /* EchoPet.app */,
+				00000000000000000000008B /* EchoPetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000020 /* EchoPet */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000021 /* App */,
+				000000000000000000000022 /* Models */,
+				000000000000000000000023 /* Views */,
+				000000000000000000000024 /* ViewModels */,
+				000000000000000000000025 /* Services */,
+				000000000000000000000084 /* Repositories */,
+				000000000000000000000026 /* Components */,
+				000000000000000000000027 /* Assets */,
+				000000000000000000000028 /* Utils */,
+			);
+			path = EchoPet;
+			sourceTree = "<group>";
+		};
+		000000000000000000000021 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000030 /* EchoPetApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		000000000000000000000022 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000032 /* EchoModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		000000000000000000000023 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000052 /* HomeView.swift */,
+				000000000000000000000054 /* LifeTimelineView.swift */,
+				000000000000000000000056 /* LifePrintView.swift */,
+				000000000000000000000058 /* EchoCompanionView.swift */,
+				000000000000000000000060 /* MemoryCapsuleView.swift */,
+				000000000000000000000070 /* PetProfileFormView.swift */,
+				000000000000000000000072 /* TimelineMemoryFormView.swift */,
+				000000000000000000000074 /* TimelineDetailView.swift */,
+				000000000000000000000076 /* MemoryCapsuleFormView.swift */,
+				000000000000000000000078 /* MemoryCapsuleDetailView.swift */,
+				000000000000000000000080 /* SettingsView.swift */,
+				000000000000000000000089 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		000000000000000000000024 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000040 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		000000000000000000000025 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000036 /* DemoDataService.swift */,
+				000000000000000000000038 /* CompanionReplyService.swift */,
+				000000000000000000000066 /* LocalDataStore.swift */,
+				000000000000000000000085 /* EchoAPIClient.swift */,
+				0000000000000000000000A2 /* EchoSupabaseClient.swift */,
+				000000000000000000000087 /* MediaPermissionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		000000000000000000000026 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000064 /* EchoPage.swift */,
+				000000000000000000000068 /* EmptyStateCard.swift */,
+				000000000000000000000042 /* PetCard.swift */,
+				000000000000000000000044 /* LifePrintCard.swift */,
+				000000000000000000000046 /* TimelineCard.swift */,
+				000000000000000000000048 /* ChatBubble.swift */,
+				000000000000000000000050 /* MemoryCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		000000000000000000000027 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000062 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		000000000000000000000028 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000034 /* Theme.swift */,
+				0000000000000000000000A0 /* Localization.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		000000000000000000000084 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000082 /* EchoRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		000000000000000000000094 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000095 /* EchoPetTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		000000000000000000000095 /* EchoPetTests */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000008C /* EchoModelTests.swift */,
+				00000000000000000000008E /* LocalDataStoreTests.swift */,
+				000000000000000000000090 /* HomeViewModelTests.swift */,
+				000000000000000000000092 /* EchoAPIClientTests.swift */,
+			);
+			path = EchoPetTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000004 /* EchoPet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000009 /* Build configuration list for PBXNativeTarget "EchoPet" */;
+			buildPhases = (
+				000000000000000000000006 /* Sources */,
+				000000000000000000000008 /* Frameworks */,
+				000000000000000000000007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EchoPet;
+			productName = EchoPet;
+			productReference = 000000000000000000000005 /* EchoPet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		000000000000000000000099 /* EchoPetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000009A /* Build configuration list for PBXNativeTarget "EchoPetTests" */;
+			buildPhases = (
+				000000000000000000000096 /* Sources */,
+				000000000000000000000097 /* Frameworks */,
+				000000000000000000000098 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00000000000000000000009D /* PBXTargetDependency */,
+			);
+			name = EchoPetTests;
+			productName = EchoPetTests;
+			productReference = 00000000000000000000008B /* EchoPetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					000000000000000000000004 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					000000000000000000000099 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 000000000000000000000004;
+					};
+				};
+			};
+			buildConfigurationList = 000000000000000000000012 /* Build configuration list for PBXProject "EchoPet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000002;
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000004 /* EchoPet */,
+				000000000000000000000099 /* EchoPetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000000000000000000A5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000031 /* EchoPetApp.swift in Sources */,
+				000000000000000000000033 /* EchoModels.swift in Sources */,
+				000000000000000000000035 /* Theme.swift in Sources */,
+				000000000000000000000037 /* DemoDataService.swift in Sources */,
+				000000000000000000000039 /* CompanionReplyService.swift in Sources */,
+				000000000000000000000067 /* LocalDataStore.swift in Sources */,
+				000000000000000000000086 /* EchoAPIClient.swift in Sources */,
+				0000000000000000000000A3 /* EchoSupabaseClient.swift in Sources */,
+				000000000000000000000088 /* MediaPermissionService.swift in Sources */,
+				0000000000000000000000A1 /* Localization.swift in Sources */,
+				000000000000000000000083 /* EchoRepository.swift in Sources */,
+				000000000000000000000041 /* HomeViewModel.swift in Sources */,
+				000000000000000000000065 /* EchoPage.swift in Sources */,
+				000000000000000000000069 /* EmptyStateCard.swift in Sources */,
+				000000000000000000000043 /* PetCard.swift in Sources */,
+				000000000000000000000045 /* LifePrintCard.swift in Sources */,
+				000000000000000000000047 /* TimelineCard.swift in Sources */,
+				000000000000000000000049 /* ChatBubble.swift in Sources */,
+				000000000000000000000051 /* MemoryCard.swift in Sources */,
+				000000000000000000000053 /* HomeView.swift in Sources */,
+				000000000000000000000055 /* LifeTimelineView.swift in Sources */,
+				000000000000000000000057 /* LifePrintView.swift in Sources */,
+				000000000000000000000059 /* EchoCompanionView.swift in Sources */,
+				000000000000000000000061 /* MemoryCapsuleView.swift in Sources */,
+				000000000000000000000071 /* PetProfileFormView.swift in Sources */,
+				000000000000000000000073 /* TimelineMemoryFormView.swift in Sources */,
+				000000000000000000000075 /* TimelineDetailView.swift in Sources */,
+				000000000000000000000077 /* MemoryCapsuleFormView.swift in Sources */,
+				000000000000000000000079 /* MemoryCapsuleDetailView.swift in Sources */,
+				000000000000000000000081 /* SettingsView.swift in Sources */,
+				00000000000000000000008A /* ProfileView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00000000000000000000008D /* EchoModelTests.swift in Sources */,
+				00000000000000000000008F /* LocalDataStoreTests.swift in Sources */,
+				000000000000000000000091 /* HomeViewModelTests.swift in Sources */,
+				000000000000000000000093 /* EchoAPIClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00000000000000000000009D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000000000004 /* EchoPet */;
+			targetProxy = 00000000000000000000009E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EchoPet/EchoPet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B27BBUH595;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EchoPet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Echo Pet";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take new pet memory photos.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record voice memories for future pet memory features.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save pet memory images created or organized by Echo Pet.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Add pet photos, timeline photos, and Memory Capsule materials.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.echopetai.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		000000000000000000000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EchoPet/EchoPet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B27BBUH595;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EchoPet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Echo Pet";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take new pet memory photos.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record voice memories for future pet memory features.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save pet memory images created or organized by Echo Pet.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Add pet photos, timeline photos, and Memory Capsule materials.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.echopetai.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		000000000000000000000013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000000000000000000000014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00000000000000000000009B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B27BBUH595;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.echopetai.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EchoPet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EchoPet";
+			};
+			name = Debug;
+		};
+		00000000000000000000009C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B27BBUH595;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.echopetai.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EchoPet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EchoPet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000009 /* Build configuration list for PBXNativeTarget "EchoPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000010 /* Debug */,
+				000000000000000000000011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000012 /* Build configuration list for PBXProject "EchoPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000013 /* Debug */,
+				000000000000000000000014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00000000000000000000009A /* Build configuration list for PBXNativeTarget "EchoPetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000009B /* Debug */,
+				00000000000000000000009C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}

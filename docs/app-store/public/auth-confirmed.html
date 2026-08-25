@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Echo Pet Email Verified</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #3f362e;
+      --muted: #8d7c6b;
+      --accent: #ffca68;
+      --panel: rgba(255, 255, 255, 0.74);
+      --line: rgba(63, 54, 46, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 32px 20px;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 18%, rgba(255, 202, 104, 0.42), transparent 28%),
+        radial-gradient(circle at 82% 12%, rgba(255, 161, 118, 0.34), transparent 26%),
+        linear-gradient(155deg, #fff8ed 0%, #ffe4ce 52%, #f8c09a 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(100%, 520px);
+      padding: 34px 28px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(92, 61, 36, 0.18);
+      backdrop-filter: blur(22px);
+    }
+
+    .mark {
+      width: 68px;
+      height: 68px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 22px;
+      border-radius: 22px;
+      color: white;
+      background: var(--accent);
+      box-shadow: 0 12px 28px rgba(255, 190, 79, 0.36);
+    }
+
+    .mark span {
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 14px;
+      font-weight: 800;
+      color: rgba(63, 54, 46, 0.72);
+    }
+
+    h1, h2, p {
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: clamp(30px, 8vw, 44px);
+      line-height: 1.08;
+      font-weight: 850;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: clamp(26px, 7vw, 38px);
+      line-height: 1.12;
+      font-weight: 820;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--muted);
+    }
+
+    .divider {
+      height: 1px;
+      margin: 26px 0;
+      background: var(--line);
+    }
+  </style>
+</head>
+<body>
+  <main aria-labelledby="verification-title">
+    <div class="mark" aria-hidden="true"><span>✓</span></div>
+    <p class="eyebrow">Echo Pet</p>
+    <h1 id="verification-title">邮箱验证成功</h1>
+    <p>你的 Echo Pet 账号邮箱已经完成验证。请回到 Echo Pet App，使用刚才注册的邮箱和密码登录。</p>
+    <div class="divider"></div>
+    <p class="eyebrow">Email Verified</p>
+    <h2>Your email is confirmed</h2>
+    <p>Return to the Echo Pet app and sign in with the email and password you just used.</p>
+  </main>
+</body>
+</html>

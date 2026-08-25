@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #3f362e;
+  --muted: #8d7c6b;
+  --accent: #ffca68;
+  --panel: rgba(255, 255, 255, 0.74);
+  --line: rgba(63, 54, 46, 0.12);
+}
+
+@theme inline {
+  --color-background: #fff8ed;
+  --color-foreground: var(--ink);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 15% 18%, rgba(255, 202, 104, 0.42), transparent 28%),
+    radial-gradient(circle at 82% 12%, rgba(255, 161, 118, 0.34), transparent 26%),
+    linear-gradient(155deg, #fff8ed 0%, #ffe4ce 52%, #f8c09a 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Segoe UI", sans-serif;
+}
+
+.verification-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 20px;
+}
+
+.verification-card {
+  width: min(100%, 520px);
+  padding: 34px 28px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: var(--panel);
+  box-shadow: 0 24px 80px rgba(92, 61, 36, 0.18);
+  backdrop-filter: blur(22px);
+}
+
+.status-mark {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  border-radius: 22px;
+  color: #fff;
+  background: var(--accent);
+  box-shadow: 0 12px 28px rgba(255, 190, 79, 0.36);
+}
+
+.status-mark span {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.copy-block {
+  display: grid;
+  gap: 10px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 800;
+  color: rgba(63, 54, 46, 0.72);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  letter-spacing: 0;
+}
+
+h1 {
+  font-size: clamp(30px, 8vw, 44px);
+  line-height: 1.08;
+  font-weight: 850;
+}
+
+h2 {
+  font-size: clamp(26px, 7vw, 38px);
+  line-height: 1.12;
+  font-weight: 820;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.divider {
+  height: 1px;
+  margin: 26px 0;
+  background: var(--line);
+}
+
+.english-copy p {
+  font-size: 16px;
+}
+
+@media (max-width: 420px) {
+  .verification-card {
+    padding: 28px 22px;
+    border-radius: 24px;
+  }
+}
