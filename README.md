@@ -1,67 +1,76 @@
-# Echo Pet iOS MVP
+# Echo Pet AI for iOS
 
-Echo Pet 是一个 SwiftUI iOS MVP，用来演示 Life Timeline、LifePrint、Echo Companion 和 Memory Capsule 四个核心体验。
+Echo Pet is a native SwiftUI companion for preserving a pet's memories, routines, and personality through Timeline, LifePrint, Memory Capsule, and an explicitly AI-generated Echo Companion.
 
-## 推荐运行方式
+## Repository Map
 
-如果 Xcode 顶部设备选择器里没有出现具体的 iPhone，或者弹出：
+| Resource | Purpose |
+| --- | --- |
+| [AGENTS.md](AGENTS.md) | Highest-priority project rules for contributors and Codex. |
+| [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) | Accurate project state, next work, known gaps, and decisions. |
+| [PRD.md](PRD.md) | Product requirements and release scope. |
+| [docs/architecture.md](docs/architecture.md) | iOS/backend architecture and security boundary. |
+| [docs/api.md](docs/api.md) | Auth, Edge Function, and data contract. |
+| [docs/database-schema.md](docs/database-schema.md) | Readable map of executable Supabase schema. |
+| [docs/design-system.md](docs/design-system.md) | Visual, accessibility, and localization rules. |
+| [docs/decisions.md](docs/decisions.md) | Durable architectural/product decisions. |
+| [docs/CODEX_HISTORY.md](docs/CODEX_HISTORY.md) | Curated history of prior Codex decisions. |
+| [docs/acceptance.md](docs/acceptance.md) | Current release acceptance checklist. |
+| [harness.md](harness.md) | Detailed App Store readiness harness and historical audit. |
 
-`A build only device cannot be used to run this target`
+## Technology
 
-请直接运行项目里的脚本：
+- Swift 5, SwiftUI, MVVM, iOS 17+
+- Local `UserDefaults` + `Codable` persistence
+- Supabase Auth/PostgREST/RLS/Edge Functions
+- Server-side Companion AI gateway
+- FastAPI AI stub for local development
+- Node/Vinext site for email confirmation pages
+
+The shipping iOS identifier is `com.echopetai.app`, version 1.0 build 1.
+
+## Run iOS
+
+1. Open `EchoPet.xcodeproj` in Xcode.
+2. Select the `EchoPet` scheme and a concrete iPhone simulator/device, not `Any iOS Device`.
+3. Run with `Command + R`.
+
+Or run:
 
 ```bash
 cd "/Users/zizy/Documents/New project/EchoPet-iOS"
 ./Scripts/run-simulator.sh
 ```
 
-脚本会自动完成：
-
-1. 找到可用的 `iPhone 16` 模拟器。
-2. 启动 Simulator。
-3. 编译 Echo Pet。
-4. 安装到模拟器。
-5. 打开 App。
-
-也可以双击：
-
-`Run Echo Pet.command`
-
-## 在 Xcode 里运行
-
-1. 打开 `EchoPet.xcodeproj`。
-2. 顶部 Scheme 选择 `EchoPet`。
-3. 运行设备必须选择具体设备，例如 `iPhone 16`。
-4. 不要选择 `Any iOS Device` 或 `Any iOS Simulator Device`，它们只是占位目标，不能运行 App。
-5. 按 `Command + R`。
-
-## 当前工程配置
-
-- Minimum Deployment: `iOS 17.0`
-- Device: `iPhone`
-- Orientation: `Portrait`
-- Bundle Identifier: `com.echopet.mvp`
-
-## Supabase 后端草案
-
-Supabase schema、RLS、Storage 策略和 `companion-chat` Edge Function 草案在：
-
-`docs/backend/supabase-migration-plan.md`
-
-本草案用于把当前本地 AI 后端迁移到 Supabase + DeepSeek。DeepSeek Key 和 Supabase service role key 只能放在服务端 Secrets，不能写入 iOS 客户端。
-
-## 常见问题
-
-### 仍然提示 Build Only Device
-
-这说明 Xcode 当前没有选中具体 iPhone 模拟器。先运行：
+## Verify
 
 ```bash
-./Scripts/run-simulator.sh
+git diff --check
+xcodebuild test -project EchoPet.xcodeproj -scheme EchoPet -destination 'platform=iOS Simulator,name=iPhone 16'
+
+cd backend/EchoPetBackend && python -m pytest
+cd ../../auth-confirmed-site && npm ci && npm test
 ```
 
-脚本启动成功后，重启 Xcode，再从顶部设备下拉框选择 `iPhone 16`。
+Simulator/device names vary. See [docs/acceptance.md](docs/acceptance.md) for release-level checks.
 
-### 没有 iPhone 16
+## Backend and Secrets
 
-打开 `Xcode > Settings > Platforms`，安装 iOS Simulator Runtime。安装完成后重启 Xcode。
+- Deployable Supabase files are in `supabase/`; the migration is the schema source of truth.
+- Use root `.env.example`, `supabase/.env.example`, and `backend/EchoPetBackend/.env.example` only as templates.
+- Never commit real API keys, Supabase service-role keys, database passwords, certificates, provisioning profiles, Apple private keys, or `.env` files.
+- The iOS client must never call an AI provider directly. See [docs/api.md](docs/api.md).
+
+## Dependencies
+
+- The iOS target uses Apple system frameworks, so it has no CocoaPods `Podfile` or Swift Package Manager manifest.
+- Python runtime dependencies are pinned in `backend/EchoPetBackend/requirements.txt`.
+- Node dependencies are pinned in `auth-confirmed-site/package-lock.json`; install with `npm ci`.
+
+## Git
+
+```bash
+git clone git@github.com:cengjunhui4-lgtm/Echo-Pet-IOS.git
+```
+
+Do not commit generated build output, local virtual environments, `node_modules`, or credentials.
